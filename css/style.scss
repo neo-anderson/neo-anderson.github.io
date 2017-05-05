@@ -1,0 +1,204 @@
+$tech-font: 'Lato', sans-serif;
+$links-font: 'Josefin Sans', sans-serif;
+$links-size: 48px;
+$lead-size: 18px;
+$section-height: 750px;
+$theme: black;
+$theme2: red;
+$padding-width: 10%;
+
+body{
+}
+
+#heroImage{
+	z-index: -1;
+}
+
+.parallax{
+	position: relative;
+	font-family: $tech-font;
+	color: white;
+	height: $section-height;
+	background-color: black;
+	background-image: url("../images/bg_compressed.jpg");
+	background-size: cover;
+	background-repeat: none;
+	background-position: right;
+	clear: both;
+	h1{
+		font-size: 64px;
+	}
+	h2{
+		font-color: white;
+		span.hint{
+			font-size: 14px;
+		}
+	}
+}
+
+#music{
+	padding-top: 100px;
+}
+
+.logo {
+	font-family: $links-font;
+	font-size: $links-size;
+	color: $theme;
+	span{
+		color: $theme2;
+	}
+}
+
+hr{
+	border: 0;
+	height: 1px;
+	margin-left: 20%;
+	margin-right: 20%;
+	background-image: -webkit-linear-gradient(left, #fff, $theme2, #fff); 
+    background-image:    -moz-linear-gradient(left, #fff, #000, #fff); 
+    background-image:     -ms-linear-gradient(left, #fff, #000, #fff); 
+    background-image:      -o-linear-gradient(left, #fff, #000, #fff); 
+}
+
+.background{
+	position: relative;
+	height: $section-height;
+	width: 100%;
+	z-index: -1;
+	background-color: #FFFFFF;
+	background: url("../images/bg0.jpg");
+	background-size: contain;
+}
+
+.lead{
+	font-size: $lead-size;
+}
+
+.redGlyph {
+	color: $theme2;
+}
+
+.content{
+	padding-top: 100px;
+	//padding-bottom: 50px;
+	height: $section-height;
+	width:100%;
+	z-index: 1;
+	background-color: white;
+	clear: both;
+}
+
+.socialSites{
+	font-size: 16px;
+	font-style: bold;
+	color: $theme;
+}
+
+.socialLinks{
+	font-size: 16px;
+	font-family: $tech-font;
+	a {
+		color: $theme;
+	}
+	a:hover {
+		color: $theme2;
+	}
+}
+
+.funFooter{
+	text-align: center;
+	background-color: $theme;
+	color: white;
+	font-family: $tech-font;
+}
+
+#me {
+	margin:0;
+	height: 100%;
+	width: 100%;
+	padding-left: $padding-width;
+	padding-right: $padding-width;
+	clear: both;
+}
+
+#work {
+	height: 100%;
+	z-index: 999;
+	
+}
+#toplinks {
+		.glyphicon{
+			padding-right: 5px;
+			font-size: 14px;
+		}
+		a {
+		color: $theme;
+		}
+		a:hover {
+			color: $theme2;
+			background-color: white;
+		}
+		a:focus {
+			color:$theme2;
+			background-color: $theme;
+		}
+}
+
+.jobLogo{
+	//width: 100%;
+	max-width: none;
+	background-size: contain;
+	margin-bottom: 10px;
+}
+
+.altColor{
+	color: $theme2;
+}
+
+.jobCom{
+	font-size: 14px;
+	font-family: arial;
+	color: $theme;
+}
+
+.jobLoc {
+	font-size: 14px;
+	font-family: arial;
+	color: lighten($theme,60%);
+
+}
+
+.jobPoints{
+	font-size: 16px;
+}
+
+.links {
+	font-family: $tech-font;
+	font-size: ($links-size * .5);
+	list-style: none;
+	
+	ul{
+		padding: 0;
+		margin: 0;
+		li{
+			float: left;
+			margin-right: 10px;
+		}
+	}
+}
+
+.vertical-center{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.navbar {
+   background-color: white; // or transparent if needed
+   background: white;
+}
+
+.navbar li { color: #000 } 
+
